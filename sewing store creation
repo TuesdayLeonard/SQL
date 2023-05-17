@@ -1,0 +1,22 @@
+CREATE TABLE sewing (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, favoribility INTEGER, color TEXT);
+
+INSERT INTO sewing VALUES (1, "scissors", 5, 1, "red");
+INSERT INTO sewing VALUES (2, "elastic", 1, 6, "white");
+INSERT INTO sewing VALUES (3, "toggles", 15, 10, "black");
+INSERT INTO sewing VALUES (4, "thread", 3, 10, "white");
+INSERT INTO sewing VALUES (5, "thread", 3, 10, "blue");
+INSERT INTO sewing VALUES (6, "material", 5, 5, "green");
+INSERT INTO sewing VALUES (7, "material", 5, 6, "pink");
+INSERT INTO sewing VALUES (8, "pins", 8, 1, "yellow");
+INSERT INTO sewing VALUES (9, "sewingneedles", 12, 1, "silver");
+INSERT INTO sewing VALUES (10, "innerfacing", 4, 6, "white");
+INSERT INTO sewing VALUES (11, "batting", 15, 6, "white");
+INSERT INTO sewing VALUES (12, "lace", 4, 6, "green");
+INSERT INTO sewing VALUES (13, "markingpen", 3, 1, "black");
+INSERT INTO sewing VALUES (14, "transferpaper", 5, 1, "blue");
+INSERT INTO sewing VALUES (15, "sewingmachine", 200, 1, "white");
+
+SELECT * FROM sewing ORDER BY price;
+
+SELECT * FROM sewing WHERE color = "white" ORDER BY price;
+
